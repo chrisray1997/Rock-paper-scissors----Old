@@ -7,12 +7,11 @@ function computerPlay() {
     let arr = ["Rock", "Paper", "Scissors"];
     let compChoice = arr[Math.floor(Math.random() * arr.length)];
         return compChoice;
-    }
+}
 
-document.querySelector('button').addEventListener('click', getPlayerChoice);
 function getPlayerChoice() {
     var str = prompt("What is your selection for this round?");
-        if (!str) {
+    if (!str) {
         return;
 }
     let newStr = str.toLowerCase();
@@ -23,7 +22,7 @@ function getPlayerChoice() {
         return capStr;
     }
 }
-
+//
     let playerSelection = getPlayerChoice();
     let computerSelection = computerPlay();            
         if (playerSelection === computerSelection) {
@@ -78,6 +77,7 @@ function getPlayerChoice() {
         }
     }
 }
+//
 
 function game() {
     while (roundCount < 5) {
