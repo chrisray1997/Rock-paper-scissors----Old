@@ -9,19 +9,20 @@ function computerPlay() {
         return compChoice;
     }
 
+document.querySelector('button').addEventListener('click', getPlayerChoice);
 function getPlayerChoice() {
-    let str = prompt("What is your selection for this round?");
+    var str = prompt("What is your selection for this round?");
         if (!str) {
         return;
-    }
+}
     let newStr = str.toLowerCase();
     let capStr = newStr[0].toUpperCase() + newStr.slice(1);
         if (capStr !== "Rock" && capStr!== "Paper" && capStr !== "Scissors") {
         return;
-    } else {
+} else {
         return capStr;
-        }
     }
+}
 
     let playerSelection = getPlayerChoice();
     let computerSelection = computerPlay();            
