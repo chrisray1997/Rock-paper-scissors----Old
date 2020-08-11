@@ -8,6 +8,7 @@ function computerPlay() {
     let compChoice = arr[Math.floor(Math.random() * arr.length)];
         return compChoice;
 }
+
 function getPlayerChoice() {
     var str = prompt("What is your selection for this round?");
     if (!str) {
