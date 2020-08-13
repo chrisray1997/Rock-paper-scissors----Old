@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(255, 132, 0);
     /* the rest of the CSS that applies on all screen sizes, e.g.: */
     margin: 0;
     background-size: auto;
@@ -20,7 +20,7 @@ body {
 input{
     background-color: #03fcd3;
     border: none;
-    color: white;
+    color: black;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
