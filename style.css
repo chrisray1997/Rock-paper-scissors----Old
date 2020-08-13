@@ -9,20 +9,13 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%) 
 }
-@media only screen and (max-width: 400px) {
-    body {
-       background-color: lightblue;
-    }
-  }
-/* Note: 601px because you were using max 600px for the colour, 
-   so to make the image show on screens BIGGER than 600px, 
-   and prevent unexpected behaviour on 600px screens when clashing media queries exist */
+
 @media only screen and (min-width: 601px) {
     body {
-        /* Only add the image on larger screens, Also add any other CSS for 600+ screens here */
         background-image: url(https://api.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg);
+        /* Add any other CSS for 600+ screens here */
     }
-  }
+}
 
   input{
     background-color: #03fcd3;
