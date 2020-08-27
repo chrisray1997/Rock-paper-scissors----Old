@@ -16,7 +16,7 @@ function getPlayerChoice() {
 }
     let newStr = str.toLowerCase();
     let capStr = newStr[0].toUpperCase() + newStr.slice(1);
-        if (capStr !== "Rock" && capStr!== "Paper" && capStr !== "Scissors") {
+    if (capStr !== "Rock" && capStr!== "Paper" && capStr !== "Scissors") {
         return;
 } else {
         return capStr;
@@ -66,6 +66,7 @@ function getPlayerChoice() {
         roundCount++;
         console.log("Computer wins! Current score: Player-" + playerWinCount + ", Computer-" + computerWinCount);
         return;
+        
 } else if (computerSelection === "Paper") {
         alert("You win! Scissors beats Paper!");
         playerWinCount++;
